@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="index,follow">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, minimum-scale=1.0, user-scalable=yes">
+<meta name="title" content="라이나생명">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="shortcut icon" href="../../assets/images/common/og.png">
+<link rel="stylesheet" href="../../assets/css/swiper.min.css">
+<link rel="stylesheet" href="../../assets/css/sub.css">
+<script src="../../assets/lib/jquery-3.5.1.min.js"></script>
+<script src="../../assets/lib/jquery-ui-1.12.1.min.js"></script>
+<script src="../../assets/lib/swiper-bundle.min.js"></script>
+<script src="../../assets/js/style.js"></script>
+<script src="../../assets/js/sub.js"></script>
+
+<title>고객의무 확인</title>
+</head>
+
+<body id="sub">
+<div class="accessibility">
+    <a href="#contents">본문 바로가기</a>
+</div>
+
+<hr>
+
+<div id="wrapper">
+    <button type="button" class="open_layer_pop">팝업열기</button>
+    <!-- fullLayerPopup -->
+    <section class="full_popup_wrap">
+        <div class="pop_container" style="display: block;"> <!-- 개발 작업 시 style="display: block;" 삭제 -->
+            <div class="pop_header">
+                <h1 class="logo">고객의무 확인</h1>
+                <button type="button" aria-label="닫기" class="icon_close">닫기</button>
+            </div>
+            <!-- pop_header -->
+
+            <div class="pop_content">
+                <div class="pop_inner">
+                    <div class="header_box"><!-- 상단 스티키 기능 사용할 경우 클래스 sticky 추가 -->
+						<div>
+							<h3>고객정보</h3>
+							<p class="sub_copy">
+                                등록된 정보를 확인하시고, 최신 정보로 변경해 주시기 바랍니다.
+                            </p>
+						</div>
+						<!--//contents_box -->
+					</div>
+					<!--//header_box -->
+
+                    <div class="message_box type2 margin_t_32">
+                        <p class="small">
+                            고객님의 안전한 금융거래를 위한 추가 확인 사항입니다. 서비스 이용을 위한 필수 사항이오니, 확인부탁드립니다.
+                        </p>
+                    </div>
+
+                    <div class="content_inner">
+                        <h4 class="margin_b_4">국적 및 직업</h4>
+                        <p>
+                            국적 또는 직업이 변경 된 경우 고객센터<br>1588-0058을 통해 안내 받으세요.
+                        </p>
+
+                        <form>
+                            <fieldset>
+                                <legend>국적 및 직업</legend>                    
+                                <div class="form_list_wrap margin_t_24">
+                                    <ul class="check_list flex_grow type3">
+                                        <li>
+                                            <span class="item">
+                                                <input type="radio" id="ccc1" name="ccc" checked="">
+                                                <label for="ccc1">내국인</label>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="item">
+                                                <input type="radio" id="ccc2" name="ccc">
+                                                <label for="ccc2">외국인</label>
+                                            </span>
+                                        </li>                            
+                                    </ul> 
+
+                                    <ul class="margin_t_8">          
+                                        <li class="form_item">
+                                            <div class="form_box">
+                                                <label for="job" class="skip">직업찾기</label>
+                                                <div class="form_area">
+                                                    <span class="js_textFiled"><input type="text" id="job" class="jsInput" aria-label="직업찾기"><button type="button" class="btn_del" style="display: none;">내용 삭제</button></span>
+                                                    <a href="" class="btn disabled">직업찾기</a> <!-- 활성화 시 disabled 클래스 삭제 -->
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pop_footer">
+                <div class="btn_box flex_grow denial">
+                    <a href="javascript:;" class="btn btn_blue">다음</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //fullLayerPopup --> 
+</div>
+</body>
+</html>

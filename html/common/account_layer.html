@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="index,follow">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, minimum-scale=1.0, user-scalable=yes">
+<meta name="title" content="스타일 가이드 - 라이나생명">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="shortcut icon" href="../../assets/images/common/og.png">
+<link rel="stylesheet" href="../../assets/css/swiper.min.css">
+<link rel="stylesheet" href="../../assets/css/sub.css">
+<script src="../../assets/lib/jquery-3.5.1.min.js"></script>
+<script src="../../assets/lib/jquery-ui-1.12.1.min.js"></script>
+<script src="../../assets/lib/swiper-bundle.min.js"></script>
+<script src="../../assets/js/style.js"></script>
+<script src="../../assets/js/sub.js"></script>
+
+<title>보험계약대출 - 라이나생명</title>
+</head>
+<body id="sub">
+    <div class="accessibility">
+        <a href="#contents">본문 바로가기</a>
+    </div>
+    
+    <hr>
+    
+    <div id="wrapper">
+        <header id="header">
+            <div class="wrap">
+                <h1 class="logo"><a href="javascript:;">보험계약대출 신청</a></h1>
+                <a href="javascript:;" class="prev_page" title="페이지 이동">이전</a>
+                <button type="button" aria-label="메뉴" class="button_menu"><i class="icon_menu"></i></button>
+            </div>
+        </header>
+        <!-- //header -->
+    
+    <hr>  
+    
+        <div id="container">
+            <div class="wrap">
+                <main id="colgroup" class="colgroup">
+                    <article>
+                        <div id="contents">
+                            <button type="button" class="pop_btn">팝업 버튼</button> <!-- 팝업 열기 버튼 -->
+
+                            <!-- 슬라이드 팝업 -->
+                            <section class="slide_popup_wrap">        
+                                <div class="slide_pop_container">
+                                    <div class="slide_pop_content">
+                                        <div class="pop_header">
+                                            <h1 class="logo">계좌 선택</h1>
+                                        </div>
+                                        
+                                        <div class="pop_inner">
+                                            <ul class="list_sorting">
+                                                <li><button type="button" class="active">기업은행 0075******8405</button></li><!-- 활성화 시 클래스 active 추가 -->
+                                                <li><button type="button">국민은행 5278******3178</button></li>
+                                                <li><button type="button">우리은행 0075******8405</button></li>
+                                                <li><button type="button">기업은행 0075******8405</button></li>
+                                                <li><button type="button">국민은행 5278******3178</button></li>
+                                                <li><button type="button">우리은행 0075******8405</button></li>
+                                            </ul>   
+                                        </div>
+
+                                        <div class="pop_footer">
+                                            <div class="btn_box flex_grow denial">
+                                                <a href="javascript:;" class="btn no_round">확인</a>
+                                            </div>
+                                        </div>
+
+                                        <button type="button" class="icon_close">닫기</button> 
+                                    </div>
+                                </div>
+
+                                <div class="dim"></div>
+                            </section>
+                            <!-- // 슬라이드 팝업 -->
+                        </div>
+
+                        <!-- 퍼블 확인 용 -->
+                        <script>
+                            $(function (){
+                                if ( !$('.slide_popup_wrap').hasClass('.slide_pop_open') ) {
+                                    $('.slide_popup_wrap').addClass('slide_pop_open');
+                                    $('.dim').show();
+                                }
+                                $('.icon_close, .dim').on( 'click', function (){
+                                    $('.slide_popup_wrap').removeClass('slide_pop_open');
+                                    $('.dim').hide();
+                                })
+                            })
+                        </script>
+                        <!-- // 퍼블 확인 용 -->
+                    </article>
+                </main>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

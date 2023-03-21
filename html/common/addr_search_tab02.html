@@ -1,0 +1,199 @@
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="index,follow">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, minimum-scale=1.0, user-scalable=yes">
+<meta name="title" content="라이나생명">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="shortcut icon" href="../../assets/images/common/og.png">
+<link rel="stylesheet" href="../../assets/css/swiper.min.css">
+<link rel="stylesheet" href="../../assets/css/sub.css">
+<script src="../../assets/lib/jquery-3.5.1.min.js"></script>
+<script src="../../assets/lib/jquery-ui-1.12.1.min.js"></script>
+<script src="../../assets/lib/swiper-bundle.min.js"></script>
+<script src="../../assets/js/style.js"></script>
+<script src="../../assets/js/sub.js"></script>
+
+<title>주소찾기 - 라이나생명</title>
+</head>
+
+<body id="sub">
+<div class="accessibility">
+    <a href="#contents">본문 바로가기</a>
+</div>
+
+<hr>
+
+<div id="wrapper">
+    <button type="button" class="open_layer_pop">팝업열기</button>
+    <!-- fullLayerPopup -->
+    <section class="full_popup_wrap">
+        <div class="pop_container" style="display: block;"> <!-- 개발 작업 시 style="display: block;" 삭제 -->
+            <div class="pop_header">
+                <h1 class="logo">주소찾기</h1>
+                <button type="button" aria-label="닫기" class="icon_close">닫기</button>
+            </div>
+            <!-- pop_header -->
+
+            <div class="pop_content">
+                <div class="pop_inner">
+                    <div class="address_wrap">
+                        <div class="siide_tab_wrap margin_t_0">
+                            <!-- 텝 메뉴 -->
+                            <div class="siide_tab_menu">
+                                <ul class="siide_tab_list type2">                    
+                                    <li class="siide_tab_item" role="tablist">                    
+                                        <a href="javascript:void(0);" id="tab1" class="slide_btn" role="tab" aria-selected="false">지번</a>                    
+                                    </li>
+                                    <li class="siide_tab_item" role="tablist">                    
+                                        <a href="javascript:void(0);" id="tab2" class="slide_btn selected" title="선택됨" role="tab" aria-selected="true">도로명</a>                    
+                                    </li>        
+                                </ul>                    
+                            </div>
+                            <!-- // 텝 메뉴 -->
+                            
+                            <!-- 도로명 -->
+                            <div class="tab_container" aria-labelledby="tab2">
+                                <form>
+                                    <fieldset>
+                                        <legend>도로명 주소 찾기</legend>
+                                        <div class="form_list_wrap content_inner">
+                                            <ul> 
+                                                <li class="form_item">
+                                                    <div class="form_box">
+                                                        <label for="addr01" class="input_title">시/도</label>
+                                                        <select id="addr01" aria-label="시/도" placeholder="선택해주세요">
+                                                            <option value="">시/도</option>
+                                                        </select>
+                                                    </div>
+                                                </li>
+                                                <li class="form_item">
+                                                    <div class="form_box">
+                                                        <label for="addr02" class="input_title">시/군/구</label>
+                                                        <div class="form_area">
+                                                            <span class="js_textFiled"><input type="text" id="addr02" class="jsInput" aria-label="시/군/구" placeholder="시/군/구"><button type="button" class="btn_del" style="display: none;">내용 삭제</button></span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="form_item">
+                                                    <div class="form_box">
+                                                        <label for="addr03" class="input_title">도로명</label>
+                                                        <div class="form_area">
+                                                            <span class="js_textFiled"><input type="text" id="addr03" class="jsInput" aria-label="도로명" placeholder="도로명"><button type="button" class="btn_del" style="display: none;">내용 삭제</button></span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="form_item">
+                                                    <div class="form_box type2">
+                                                        <p class="input_title">건물번호</p>
+                                                        <div class="input_cont">
+                                                            <label for="addr04" class="skip">건물번호 첫번째 숫자</label>
+                                                            <input type="text" id="addr04" aria-label="건물번호 첫번째 숫자" placeholder="숫자 입력">
+                                                            <label for="addr05" class="skip">건물번호 두번째 숫자</label>
+                                                            <input type="text" id="addr05" aria-label="건물번호 두번째 숫자" placeholder="숫자 입력">
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            
+                                            <div class="btn_box flex_grow">
+                                                <a href="javascript:void(0);" class="btn btn_blue btn_light">조회</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="line margin_b_0"></div>
+
+                                        <!-- 검색결과 -->
+                                        <div class="search_box">
+                                            <div class="lineType_listWrap">
+                                                <ul class="line_type_list spacing3">  
+                                                    <li class="line_list none">
+                                                        조회 결과가 없습니다.
+                                                    </li>       
+                                                    <!-- // 조회결과 없을 때 -->   
+                
+                                                    <li class="line_list">
+                                                        <a href="javascript:void(0);" class="list_checkbox selected">
+                                                            <strong class="addr_number">03156</strong>
+                                                            <p class="addr_text">
+                                                                <span>서울특별시 종로구 삼봉로 48번지</span>
+                                                                <span>[지번] 서울특별시 종로구 청진동 188 시그나타워 15층</span>
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="line_list">
+                                                        <a href="javascript:void(0);" class="list_checkbox">				
+                                                            <strong class="addr_number">03156</strong>
+                                                            <p class="addr_text">
+                                                                <span>서울특별시 종로구 삼봉로 48번지</span>
+                                                                <span>[지번] 서울특별시 종로구 청진동 188 시그나타워 15층</span>
+                                                            </p>
+                                                        </a>
+                                                    </li>		
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- // 검색결과 -->
+
+                                        <div class="line margin_b_0"></div>
+
+                                        <!-- 상세주소입력 -->
+                                        <h3 class="title18 content_inner">상세주소 입력</h3>
+                                        <ul class="content_inner margin_t_12"> 
+                                            <li class="form_item">
+                                                <p class="font_gray">서울특별시 종로구 청진동 188</p>
+                                                <div class="form_box margin_t_8">
+                                                    <label for="ad2" class="skip">상세주소 입력</label>
+                                                    <div class="form_area">
+                                                        <span class="js_textFiled"><input type="text" id="ad2" class="jsInput" aria-label="주소" placeholder="읍/면/동 입력"><button type="button" class="btn_del" style="display: none;">내용 삭제</button></span>
+                                                    </div>
+                                                </div>
+                                                <p class="font14 margin_t_8">예) 역삼동, 화도읍, 장유면</p>
+
+                                                <div class="btn_box flex_grow margin_t_12">
+                                                    <a href="javascript:void(0);" class="btn btn_blue btn_light">상세주소 확인</a>
+                                                </div>
+                                            </li>
+                                        </ul>  
+                                        <!-- // 상세주소입력 -->
+
+                                        <div class="line margin_b_0"></div>
+
+                                        <!-- 도로명 주소 확인 -->
+                                        <h3 class="title18 content_inner">지번주소 확인</h3>
+                                        <ul class="content_inner margin_t_12"> 
+                                            <li class="form_item">
+                                                <div class="form_box">
+                                                    <label for="ad3" class="skip">지번주소 확인</label>
+                                                    <div class="form_area">
+                                                        <span class="js_textFiled"><input type="text" id="ad3" class="jsInput" aria-label="지번주소 확인" value="서울 종로구 삼봉로 48" readonly=""><button type="button" class="btn_del" style="display: none;">내용 삭제</button></span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>  
+                                        <!-- // 도로명 주소 확인 -->
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <!-- // 도로명  -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pop_footer">
+                <div class="btn_box flex_grow denial">
+                    <a href="javascript:;" class="btn btn_blue disabled">적용</a> <!-- 활성화 시 disabled 클래스 삭제 -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //fullLayerPopup --> 
+</div>
+</body>
+</html>

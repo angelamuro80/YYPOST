@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="index,follow">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, minimum-scale=1.0, user-scalable=yes">
+<meta name="title" content="라이나생명">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="shortcut icon" href="../../assets/images/common/og.png">
+<link rel="stylesheet" href="../../assets/css/swiper.min.css">
+<link rel="stylesheet" href="../../assets/css/sub.css">
+<script src="../../assets/lib/jquery-3.5.1.min.js"></script>
+<script src="../../assets/lib/jquery-ui-1.12.1.min.js"></script>
+<script src="../../assets/lib/swiper-bundle.min.js"></script>
+<script src="../../assets/js/style.js"></script>
+<script src="../../assets/js/sub.js"></script>
+
+<title>주소찾기 - 라이나생명</title>
+</head>
+
+<body id="sub">
+<div class="accessibility">
+    <a href="#contents">본문 바로가기</a>
+</div>
+
+<hr>
+
+<div id="wrapper">
+    <button type="button" class="open_layer_pop">팝업열기</button>
+    <!-- fullLayerPopup -->
+    <section class="full_popup_wrap">
+        <div class="pop_container" style="display: block;"> <!-- 개발 작업 시 style="display: block;" 삭제 -->
+            <div class="pop_header">
+                <h1 class="logo">주소찾기</h1>
+                <button type="button" aria-label="닫기" class="icon_close"></button>
+            </div>
+            <!-- pop_header -->
+
+            <div class="pop_inner">
+                <div class="address_search_wrap">
+                    <div class="content_inner">
+                        <div class="search_area">
+                            <div class="form_wrap">
+                                    <label for="" class="skip">생년월일 6자리</label>
+                                    <input type="text" id="" class="jsInput" maxlength='6' title="생년월일 6자리" placeholder="예) 종로구 삼봉로 48">
+
+                                <!-- <label for="" class="skip">주소검색</label> -->
+                                <!-- <input type="text" id="" class="jsInput" placeholder="예) 종로구 삼봉로 48"> -->
+                                <button type="button" class="btn">검색</button>
+                            </div>
+
+
+
+                            <p class="alert small">지번/도로명 주소 또는 건물(아파트)명으로 검색하세요.</p>
+                        </div>
+                    </div>
+
+                    <div class="line"></div>
+                        
+                    <div class="content_inner">
+                        <div class="result_wrap">
+                            <div class="result_default">
+                                <div class="text_box">
+                                    <p class="bold">Tip</p>
+                                    <p class="small">아래와 같은 조합으로 검색을 하시면 더욱 정확한 결과가 검색됩니다.</p>
+                                </div>
+
+                                <dl class="text_list">
+                                    <dt class="small">도로명+건물번호</dt>
+                                    <dd class="small">예)판교역로 234, 제주 첨단로 242</dd>
+                                    <dt class="small">지역명(동/리)+번지</dt>
+                                    <dd class="small">예)판교역로 234, 제주 첨단로 242</dd>
+                                    <dt class="small">지역명(동/리)+건물명(아파트명)</dt>
+                                    <dd class="small">예)분당 주공, 연수동 주공3차</dd>
+                                    <dt class="small">사서함명+번호</dt>
+                                    <dd class="small">예)분당우체국사서함 1~100</dd>
+                                </dl>
+
+                            </div>
+                            <div class="result_no_data">
+                                <p class="text_center">조회 결과가 없습니다.</p>
+                            </div>
+                            <div class="result_list">
+                                <ul class="address_list">
+                                    <li class="list select_type">
+                                        <a href="javascript:;" class="top_inner">
+                                            <div class="list_top_inner">
+                                                <p class="small bold">03156</p>
+                                                <p class="txt">
+                                                    <span>서울특별시 종로구 삼봉로 48번지</span>
+                                                    <span>[지번] 서울특별시 종로구 청진동 188 시그나타워 15층</span>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>									
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pop_footer">
+                <div class="btn_box flex_grow denial fixed">
+                    <a href="javascript:;" class="btn btn_blue">선택</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //fullLayerPopup -->                    
+</div>
+</body>
+</html>

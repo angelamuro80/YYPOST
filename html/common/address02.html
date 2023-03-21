@@ -1,0 +1,125 @@
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="index,follow">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, minimum-scale=1.0, user-scalable=yes">
+<meta name="title" content="라이나생명">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="shortcut icon" href="../../assets/images/common/og.png">
+<link rel="stylesheet" href="../../assets/css/swiper.min.css">
+<link rel="stylesheet" href="../../assets/css/sub.css">
+<script src="../../assets/lib/jquery-3.5.1.min.js"></script>
+<script src="../../assets/lib/jquery-ui-1.12.1.min.js"></script>
+<script src="../../assets/lib/swiper-bundle.min.js"></script>
+<script src="../../assets/js/style.js"></script>
+<script src="../../assets/js/sub.js"></script>
+
+<title>주소 수정 - 라이나생명</title>
+</head>
+
+<body id="sub">
+<div class="accessibility">
+    <a href="#contents">본문 바로가기</a>
+</div>
+
+<hr>
+
+<div id="wrapper">
+    <button type="button" class="open_layer_pop">팝업열기</button>
+    <!-- fullLayerPopup -->
+    <section class="full_popup_wrap">
+        <div class="pop_container" style="display: block;"> <!-- 개발 작업 시 style="display: block;" 삭제 -->
+            <div class="pop_header">
+                <h1 class="logo">주소 수정</h1>
+                <button type="button" aria-label="닫기" class="icon_close">닫기</button>
+            </div>
+            <!-- pop_header -->
+
+            <div class="pop_content">
+                <div class="pop_inner">
+                    <div class="address_wrap content_inner">
+                        <form>
+                            <fieldset>
+                                <legend>주소 수정</legend>
+                                <div class="form_list_wrap">                                    
+                                    <ul>                   
+                                        <li class="form_item">
+                                            <span class="input_title">주소</span>
+                                            <div class="form_box">
+                                                <label for="ad01" class="skip">주소</label>
+                                                <div class="form_area">
+                                                    <span class="js_textFiled"><input type="text" id="ad01" class="jsInput" aria-label="주소" placeholder="주소찾기로 입력"><button type="button" class="btn_del" style="display: none;">내용 삭제</button></span>
+                                                    <a href="" class="btn">주소찾기</a> <!-- 활성화 시 disabled 클래스 삭제 -->
+                                                </div>
+                                            </div>
+                                            <div class="form_box">
+                                                <label for="ad02" class="skip">주소</label>
+                                                <div class="form_area">
+                                                    <span class="js_textFiled"><input type="text" id="ad02" class="jsInput" aria-label="주소" value="서울시 종로구 삼봉로 48" readonly=""><button type="button" class="btn_del" style="display: none;">내용 삭제</button></span>
+                                                </div>
+                                            </div>
+                                            <div class="form_box">
+                                                <label for="ad03" class="skip">상세주소</label>
+                                                <div class="form_area">
+                                                    <span class="js_textFiled"><input type="text" id="ad03" class="jsInput" aria-label="상세주소" placeholder="상세주소"><button type="button" class="btn_del" style="display: none;">내용 삭제</button></span>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="form_item">
+                                            <div class="form_box">
+                                                <span class="input_title">이주소는 어디인가요?</span>
+                                                <ul class="check_list flex_grow">
+                                                    <li>
+                                                        <span class="item">
+                                                            <input type="radio" id="spot01" name="spot" aria-label="자택" checked="">
+                                                            <label for="spot01">자택</label>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="item">
+                                                            <input type="radio" id="spot02" name="spot" aria-label="직장">
+                                                            <label for="spot02">직장</label>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="item">
+                                                            <input type="radio" id="spot03" name="spot" aria-label="직장">
+                                                            <label for="spot03">기타</label>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="margin_t_16">
+                                    <span class="check_box">
+                                        <input type="checkbox" id="ch01" checked="">
+                                        <label for="ch01">우편물 수령처로 저장</label>
+                                    </span>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pop_footer">
+                <div class="btn_box fixed denial">
+                    <a href="javascript:;" class="btn btn_coolGrary">삭제</a>
+                    <a href="javascript:;" class="btn btn_blue">저장</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //fullLayerPopup --> 
+</div>
+</body>
+</html>

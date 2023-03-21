@@ -1,0 +1,189 @@
+ @charset "UTF-8";
+
+ .content_inner { padding: 0 2rem; }
+
+ /* 보험계약대출 안내 */
+ .slideTitle_wrapper { padding: 0 3.2rem; }
+ .slideTitle_wrapper .slideTitle_inner { position: relative; overflow: hidden; width: 100%; height: 80%; }
+ .slideTitle_wrapper .slideTitle_inner .swiper-slide-container { 
+    width: 100%; height:100%;
+    display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-pack: center; -ms-flex-pack: center;
+    -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; 
+}
+
+.slideTitle_wrapper .slideTitle_inner .swiper-slide-container { padding-bottom: 2.9rem; }
+.slideTitle_wrapper .slideTitle_inner h3 > span { margin-bottom: 0.8rem; color: #242B2E; }
+
+.slideTitle_wrapper .slideTitle_inner .slideTitle_bottom { position: relative; width: 23.3rem; height: 2.7rem;  }
+
+/* pagination */
+.slideTitle_wrapper .slideTitle_inner .slideTitle_bottom .pagination_fraction {  background-color: #9193e3; }
+.slideTitle_wrapper .slideTitle_inner .slideTitle_bottom .pagination_fraction > span { position: absolute; top: 50%; font-size: 1.2rem; transform: translateY(-50%); }
+.slideTitle_wrapper .slideTitle_inner .slideTitle_bottom .pagination_fraction .current { left: 0; color: #242B2E; }
+.slideTitle_wrapper .slideTitle_inner .slideTitle_bottom .pagination_fraction .total { right: 4rem; color: #A6AFBA; }
+
+/* progress-bar */
+.slideTitle_wrapper .slideTitle_inner.swiper-horizontal > .swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal {
+    position: absolute; top: 50%; left: 3rem; transform: translateY(-50%);
+}
+.slideTitle_wrapper .slideTitle_inner .slideTitle_bottom .swiper-pagination-progressbar { display: inline-block; width: 13.5rem; height: 0.2rem; background-color: #E7ECF3; }
+.slideTitle_wrapper .slideTitle_inner .slideTitle_bottom .swiper-pagination-progressbar .swiper-pagination-progressbar-fill { background-color: #3F44DE; }
+
+.slideTitle_wrapper .slideTitle_inner .slideTitle_bottom .slideTitle_btn { position: absolute; top: 50%; right: 0; z-index: 130; transform: translateY(-56%); }
+.slideTitle_wrapper .slideTitle_inner .slideTitle_bottom .slideTitle_btn > button { line-height: 0; font-size: 0; }
+.slideTitle_wrapper .slideTitle_inner .slideTitle_bottom .slideTitle_btn .start { display: inline-block; width: 0.8rem; height: 0.9rem; background: url('../../assets/images/common/icon_start.png') no-repeat 0 0; background-size: 100% auto; }
+.slideTitle_wrapper .slideTitle_inner .slideTitle_bottom .slideTitle_btn .stop { display: inline-block; width: 0.8rem; height: 1.1rem; margin-right: 0.8rem; background: url('../../assets/images/common/icon_stop.png') no-repeat 0 0; background-size: 100% auto; }
+.slideTitle_wrapper .info_item_list { margin-top: 2.4rem; }
+
+/* 이용방법 */
+.info_wrap .info_text { padding: 0.8rem 0 0.8rem 1.2rem; font-weight: 700; color: #242B2E; border-radius: 0.8rem; background: #F8F9FD; }
+.info_wrap .info_step_list { margin-left: 1.2rem; }
+.info_wrap .info_step_list > li { position: relative; margin-top: 1.4rem; padding-left: 3.2rem; color: #242B2E; }
+.info_wrap .info_step_list > li::before { position: absolute; top: 50%; left: 0; width: 2.4rem; height: 2.4rem; line-height: 2.3rem; text-align: center; font-size: 1.4rem; color: #242B2E; border: 1px solid #242B2E; border-radius: 50%; transform: translateY(-50%); }
+.info_wrap .info_step_list > li.step_num01::before { content: '1'; }
+.info_wrap .info_step_list > li.step_num02::before { content: '2'; }
+.info_wrap .info_step_list > li.step_num03::before { content: '3'; }
+.info_wrap .info_step_list > li.step_num04::before { content: '4'; }
+.info_wrap .info_step_list > li.step_num05::before { content: '5'; }
+.info_wrap .bullet_list { margin: 1.4rem 0 0 1.2rem; }
+.info_wrap .bullet_list li { font-size: 1.4rem; } 
+
+/* 동의 및 확인 사항 */
+.terms_cont_wrap h4 + h5,
+.terms_cont_wrap h5 + ul + h6 { margin-top: 3.2rem; }
+.terms_cont_wrap h5,
+.terms_cont_wrap h6 { margin: 2.4rem 0 1.2rem;  }
+.terms_cont_wrap ul > li + li,
+.terms_cont_wrap .bullet_list li > .dash_list,
+.terms_cont_wrap .btn_box { margin-top: 0.8rem; }
+
+.scroll_induce { position: fixed; bottom: 4.8rem; left: 0; width: 100%; text-align: center; background: #fff; }
+.scroll_induce > span { display: inline-block; line-height: 4.8rem; text-align: center; font-size: 1.4rem; color: #242B2E; -webkit-animation: sdb 1s infinite; animation: sb 1s infinite; }
+.scroll_induce > span::after { content: ''; display: inline-block; position: relative; top: -2px; left: 1rem; width: 0.7rem; height: 0.7rem; border-left: 1px solid #565C63; border-bottom: 1px solid #565C63; transform: rotate(315deg); }
+
+@-webkit-keyframes sb {
+    0% { -webkit-transform: translate(0, 0); opacity: 1; }
+    50% { opacity: 1; }
+    100% { -webkit-transform: translate(0, 5px); opacity: 1; }
+}
+@keyframes sb {
+    0% { transform: translate(0, 0); opacity: 1; }
+    50% { opacity: 1; }
+    100% { transform: translate(0, 5px); opacity: 1; }
+}
+
+/* 본인인증 */
+.check_cont { margin-top: 1.2rem; padding: 1.6rem; background-color: #F8F9FD; border-radius: 8px; }
+.check_cont .check_box {display:block; }
+.check_cont .line {margin-bottom:3.2rem;}
+
+
+/* 주소 */
+.address_wrap .address_change_box { padding: 2rem; border: 1px solid #E7ECF3; border-radius: 8px; }
+.address_wrap .addr_number { display: block; color: #242B2E; }
+.address_wrap .addr_text { margin-top: 0.8rem; }
+.address_wrap .addr_text span { display: block; }
+
+.address_wrap .search_box { margin-top: 3.2rem; }
+.search_box .addr_number { display: block; font-size: 1.4rem; color: #242B2E; }
+.search_box div + .addr_number {margin-top: 0.8rem; }
+.search_box .addr_text { margin-top: 0.4rem; }
+.address_wrap .search_box .btn { position: absolute; top: 2rem; right: 2rem; }
+
+.address_wrap .search_tip { margin: 3.2rem 2rem 0; }
+.address_wrap .search_tip > p { font-size: 1.4rem; color: #242B2E; }
+.address_wrap .search_tip > p > strong { display: block; padding-bottom: 0.4rem; font-size: 1.6rem; }
+.address_wrap .search_tip > ul { margin-top: 2.4rem; }
+.address_wrap .search_tip > ul > li { margin-top: 1.2rem; font-size: 1.4rem; }
+.address_wrap .search_tip > ul > li:first-child { margin-top: 0; }
+.address_wrap .search_tip > ul > li > span { display: block; color: #A6AFBA }
+
+
+/* 은행선택 */
+.bank_pick_wrap { margin: 3.2rem 1.2rem 0; }
+.bank_pick_wrap > ul { display: flex; flex-wrap: wrap;}
+.bank_pick_wrap > ul > li {flex-basis:calc((100%/3) - 0.8rem); margin: 0 0.4rem 0.8rem; }
+.bank_pick_wrap > ul > li .bank::before {position: absolute; top: 1.2rem; left: 50%; width: 2.8rem; height: 2.8rem; font-size: 0; line-height: 0; transform: translateX(-50%); }
+.bank_pick_wrap > ul > li.icon_bank01 .bank::before { content: '우리은행'; background: url(../../assets/images/common/bank01.png) no-repeat 0 0; background-size: 100% auto; } 
+.bank_pick_wrap > ul > li.icon_bank02 .bank::before { content: '기업은행'; background: url(../../assets/images/common/bank02.png) no-repeat 0 0; background-size: 100% auto; } 
+.bank_pick_wrap > ul > li.icon_bank03 .bank::before { content: '국민은행'; background: url(../../assets/images/common/bank03.png) no-repeat 0 0; background-size: 100% auto; }
+.bank_pick_wrap > ul > li.icon_bank04 .bank::before { content: '하나은행'; background: url(../../assets/images/common/bank04.png) no-repeat 0 0; background-size: 100% auto; } 
+.bank_pick_wrap > ul > li.icon_bank05 .bank::before { content: '씨티은행'; background: url(../../assets/images/common/bank05.png) no-repeat 0 0; background-size: 100% auto; }
+.bank_pick_wrap > ul > li.icon_bank06 .bank::before { content: 'SC제일은행'; background: url(../../assets/images/common/bank06.png) no-repeat 0 0; background-size: 100% auto; } 
+.bank_pick_wrap > ul > li.icon_bank07 .bank::before { content: '외환은행'; background: url(../../assets/images/common/bank07.png) no-repeat 0 0; background-size: 100% auto; }
+.bank_pick_wrap > ul > li.icon_bank08 .bank::before { content: '농협은행'; background: url(../../assets/images/common/bank08.png) no-repeat 0 0; background-size: 100% auto; }
+.bank_pick_wrap > ul > li.icon_bank09 .bank::before { content: '신한은행'; background: url(../../assets/images/common/bank09.png) no-repeat 0 0; background-size: 100% auto; }
+.bank_pick_wrap > ul > li.icon_bank10 .bank::before { content: '부산은행'; background: url(../../assets/images/common/bank10.png) no-repeat 0 0; background-size: 100% auto; }
+.bank_pick_wrap > ul > li.icon_bank11 .bank::before { content: '광주은행'; background: url(../../assets/images/common/bank11.png) no-repeat 0 0; background-size: 100% auto; }
+.bank_pick_wrap > ul > li.icon_bank12 .bank::before { content: '제주은행'; background: url(../../assets/images/common/bank12.png) no-repeat 0 0; background-size: 100% auto; }
+.bank_pick_wrap > ul > li.icon_bank13 .bank::before { content: '경남은행'; background: url(../../assets/images/common/bank13.png) no-repeat 0 0; background-size: 100% auto; }
+.bank_pick_wrap > ul > li.icon_bank14 .bank::before { content: '전북은행'; background: url(../../assets/images/common/bank14.png) no-repeat 0 0; background-size: 100% auto; }
+.bank_pick_wrap > ul > li.icon_bank15 .bank::before { content: '새마을금고'; background: url(../../assets/images/common/bank15.png) no-repeat 0 0; background-size: 100% auto; }
+.bank_pick_wrap > ul > li.icon_bank16 .bank::before { content: '신한협동조합'; background: url(../../assets/images/common/bank16.png) no-repeat 0 0; background-size: 100% auto; }
+.bank_pick_wrap > ul > li.icon_bank17 .bank::before { content: '우체국'; background: url(../../assets/images/common/bank17.png) no-repeat 0 0; background-size: 100% auto; }
+.bank_pick_wrap > ul > li.icon_bank18 .bank::before { content: '대구은행'; background: url(../../assets/images/common/bank18.png) no-repeat 0 0; background-size: 100% auto; }
+.bank_pick_wrap > ul > li.icon_bank19 .bank::before { content: '수협(중앙)'; background: url(../../assets/images/common/bank19.png) no-repeat 0 0; background-size: 100% auto; }
+.bank_pick_wrap > ul > li > .bank { display: block; position: relative; width: 100%; padding: 4.4rem 0 1.2rem; text-align: center; font-size: 1.4rem; color: #242B2E; border: 1px solid #E7ECF3; border-radius: 8px; }
+.bank_pick_wrap > ul > li > .bank.selected { border: 1px solid #3F44DE; }
+
+/*2022.03. 24 김선주 추가 */
+.completion .completion_top.icon1:after {background-image: url('../../assets/images/content/completion_icon1.png');}/*신청 완료 */
+.completion .completion_top.icon2:after {background-image: url('../../assets/images/content/completion_icon2.png');}/*신청 실패 */
+
+/* 승인번호  */
+.text_btn.reload { border-bottom: none !important; } 
+.text_btn.reload:after { content: ''; display: inline-block; margin-left: 0.4rem; margin-bottom: 0.4rem; width: 1.6rem; height: 1.6rem; vertical-align: middle; background: url(../images/common/icon_reload.png) no-repeat center / contain; } 
+
+.authorization_number { display: flex; margin: 4.8rem 0; height: 4.2rem; justify-content: center; align-items: center; } 
+.authorization_number li { margin-right: 0.4rem; } 
+.authorization_number li:last-child { margin-right: 0; } 
+.authorization_number li span { font-size: 3.2rem; font-weight: 700; color: #242B2E; } 
+
+.time_wrap { display:flex; width: 100%; height:3.2rem; align-items: center; } 
+.time_wrap .time_text { margin-right: 1.6rem; width: 3.6rem; color: #3F44DE; font-weight: 700; } 
+.time_wrap .time_range { position: relative; display: flex; width: calc(100% - 3.6rem); align-items: center; } 
+.time_wrap .time_range .range { background-color: #E7ECF3; border-radius: 4px; width: 100%; height: 0.8rem; } 
+.time_wrap .time_range .range.on { background-color: #3F44DE; position:absolute; top: 0; left: 0; } 
+
+/* 나의 계약관리 */
+.situation_box{padding:1.2rem 0;margin-top:2.4rem;border-radius:8px;background-color:#EBF3FF;}
+.situation_box ul{display:flex;justify-content:center}
+.situation_box ul li{flex-grow:1;flex-basis:0;text-align:center;}
+.situation_box .nums{display:block;font-size:2.8rem;line-height:4.4rem;font-weight:700;color:#150F96;}
+.situation_box .title{display:block;font-size:1.4rem;line-height:2.2rem;font-weight:700;color:#565C63;}
+
+
+.btn.icon_sorting::after{display:inline-block;width:1.6rem;height:1.6rem;margin-left:2px;content:'';vertical-align:-2px;background:url(../../assets/images/common/icon_sorting.png) center center no-repeat;background-size:90% auto;}
+.btn.icon_filter::after{display:inline-block;width:1.6rem;height:1.6rem;margin-left:2px;content:'';vertical-align:-2px;background:url(../../assets/images/common/icon_filter.png) center center no-repeat;background-size:90% auto;}
+
+.filter_box{margin:0;}
+.filter_box .title_area{display:flex;justify-content:center;padding-bottom:1.6rem;border-bottom:1px solid #CED6DE;}
+.filter_box .title_area .title{flex-grow:1;font-size:1.6rem;color:#242B2E;}
+.filter_box .title_area .toggle_box{flex-grow:0;}
+.filter_box .contents_area h2{padding:2.4rem 0 1.2rem;}
+.filter_box .contents_area .check_list .item{margin-bottom:0.8rem;}
+
+.flex_start{justify-content:flex-start !important;}
+.flex_center{justify-content:center !important;}
+.flex_end{justify-content:flex-end !important;}
+
+/* 랜딩 문답화면 */
+.qa_bg_blank #header .wrap,
+.qa_bg_blank #contents { background-color: #242B2E; } /* 문답 배경 */
+.qa_bg_blank #container #contents { padding-bottom: 8.5rem; }
+.qa_bg_blank .qa_wrap { position: relative; }
+.qa_bg_blank .qa_wrap h3,
+.qa_bg_blank .qa_wrap p,
+.qa_bg_blank .qa_wrap div,
+.qa_bg_blank .qa_wrap span,
+.qa_bg_blank .qa_wrap strong,
+.qa_bg_blank .qa_wrap .btn { color: #fff; }
+.qa_bg_blank .qa_wrap { height: calc(100vh - 14.8rem); }
+.qa_bg_blank .qa_wrap .qa_inner { margin: 0 3.2rem; }
+.qa_bg_blank #header .prev_page::before { border-top-color: #fff; border-left-color: #fff; }
+.qa_bg_blank .qa_wrap.qa_bg_blank .qa_wrap h3 { margin-top: 3.8rem; font-size: 2.8rem;}
+.qa_bg_blank .qa_wrap .btn_cover { margin-top: 3.2rem; }
+.qa_bg_blank .qa_wrap .btn_block_box { display: block; width: calc(100% - 4rem); position: absolute; bottom: 0; left: 0; margin: 0 2rem; }
+.qa_bg_blank .qa_wrap .btn_block_box .icon_check { display: block; position: relative; flex-grow: initial; flex-basis: initial; width: 100%; line-height: 5.6rem; text-align: left; font-weight: 400; color: #fff; background: #3f474d; }
+.qa_bg_blank .qa_wrap .btn_block_box .icon_check::after { content: ''; position: absolute; top: 50%; right: 1.9rem; width: 0.5rem; height: 0.8rem; border-top: 2px solid #fff; border-left: 2px solid #fff; transform: translateY(-50%) rotate(221deg); }
+.qa_bg_blank .qa_wrap .btn_block_box .icon_check + .icon_check { margin-top: 0.8rem; }

@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/* layout */
+#container{}
+
+.rowgroup{}
+.rowgroup .colgorup{}
+.rowgroup .colgorup2{}
+.rowgroup .colgorup3{}
+
+.rowgroup2{}
+.rowgroup2 .colgorup{}
+.rowgroup2 .colgorup2{}
+.rowgroup2 .colgorup3{}
+
+.rowgroup3{}
+.rowgroup3 .colgorup{}
+.rowgroup3 .colgorup2{}
+.rowgroup3 .colgorup3{}

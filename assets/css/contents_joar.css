@@ -1,0 +1,92 @@
+/* 필수서류제출 */
+.document_submit_wrap h3 { line-height: 3.84rem; } 
+.document_submit_wrap .message_box { margin-top: 3.2rem; } 
+.document_submit_wrap .submit_list_wrap { margin-top: 2.4rem; } 
+.document_submit_wrap .submit_list_wrap .form_box { height: 3.8rem; } 
+
+/* 기획 확인 후 수정필요 */
+.document_submit_wrap .submit_list_wrap .img_file_list li { margin-bottom: 1.2rem; } 
+.document_submit_wrap .submit_list_wrap .img_file_list { display: flex; flex-flow:row wrap; justify-content:space-between; } 
+/* // 기획 확인 후 수정필요 */
+
+.document_submit_wrap .submit_list_wrap .img_file_list .upload_btn { position: relative; width:15.4rem; height:14rem; border-radius:8px; } 
+.document_submit_wrap .submit_list_wrap .img_file_list .upload_btn:before { content:''; position: absolute; top: 1.6rem; left: 1.6rem; width:2.4rem; height:2.4rem; background: url(../images/HOLD01/img_select.png) center / contain no-repeat; } 
+.document_submit_wrap .submit_list_wrap .img_file_list .upload_btn.active { border: 1px solid #8FABFF; } 
+.document_submit_wrap .submit_list_wrap .img_file_list .upload_btn.active:after { content:''; position: absolute; top: 1.6rem; left: 1.6rem; width:2.4rem; height:2.4rem; background: url(../images/HOLD01/img_selected.png) center / contain no-repeat; } 
+.document_submit_wrap .submit_list_wrap .img_file_list .upload_btn.add_image { border:none; background: url(../images/HOLD01/image_add.png) center / contain no-repeat; } 
+.document_submit_wrap .submit_list_wrap .img_file_list .upload_btn.add_image::before { display: none; } 
+.document_submit_wrap .submit_list_wrap .img_file_list .upload_btn.add_image::after { display: none; } 
+.document_submit_wrap .submit_list_wrap .img_file_list .upload_btn .image_wrap img { display: inline-block; width: 100%; height: 100%; border-radius: 8px; } 
+
+.form_area { justify-content: space-between; align-items: center; } 
+
+
+/* 텍스트 아이콘 */
+.text_icon_01 { display: inline-block; width: 1.2rem; height: 1.2rem; background: url(../images/content/text_icon_01.png) no-repeat center / contain;}
+
+/* 연계서비스 이용 */
+.color_banner{display:flex;align-items: center; margin: 0 2rem;padding: 1.6rem;border-radius: 8px;font-size: 1.6rem;font-weight: 700;}
+.color_banner+.color_banner{margin-top: 1rem;}
+.color_banner.type1{background-color: #6E27C5;color: #fff;}
+.color_banner.type1 .icon{width:3.2rem; height:3.2rem;margin-right:0.8rem;background:url(../images/content/cb_icon_01.png) center / contain no-repeat;}
+.color_banner.type2{background-color: #01C1D6;color: #000;}
+.color_banner.type2 .icon{width:3.2rem; height:3.2rem;margin-right:0.8rem;background:url(../images/content/cb_icon_02.png) center / contain no-repeat;}
+.color_banner.type3{background-color: #FFB617;color: #000;}
+.color_banner.type3 .icon{width:3.2rem; height:3.2rem;margin-right:0.8rem;background:url(../images/content/cb_icon_03.png) center / contain no-repeat;}
+/* // 연계서비스 이용 */
+
+
+
+.accordion_tit .tit .txt { display: block; font-size: 1.4rem; font-weight: 400; color: #565C63; }
+.accordion_tit .tit > strong { font-size: 1.8rem; color: #242B2E; }
+
+
+.completion .completion_top.icon7:after {background:url('../../assets/images/content/completion_icon7.png') center / 3.2rem 3.3rem no-repeat;}
+.completion .completion_top.icon8:after {background:url('../../assets/images/content/completion_icon8.png') center / 3.2rem 3.3rem no-repeat;}
+
+
+.form_list_wrap .form_item.line_2 .input_title{margin-bottom: 0;}
+.form_list_wrap .form_item.line_2 .form_box{display: flex;flex-flow: row wrap;justify-content: space-between;}
+.form_list_wrap .form_item.line_2 .form_box .check_box{margin: 1.2rem 0;width: 50%;}
+
+
+.type_infomation_list{display: flex;flex-flow: row wrap;}
+.type_infomation_list li{margin-right: 0.3rem;}
+.type_infomation_list .icon{ display: inline-block;margin-right: 0.2rem; width: 1.2rem; height: 1.2rem; background: url(../images/content/text_icon_02.png) no-repeat center / contain;}
+
+
+.table.type3{}
+.table.type3:after{height:1px;background-color: #E7ECF3;}
+.table.type3:before{height:1px;}
+.table.type3 tr{border-top: 1px solid #E7ECF3;}
+.table.type3 th{font-size:1.6rem;font-weight: 400; padding: 1.2rem 0.2rem;border: none;}
+.table.type3 td{padding: 1.2rem 0.2rem;border: none;}
+.table.type3 .check_box label{padding-left:2.4rem;font-size:1px;line-height:1px;color:transparent;text-indent:-100px;}
+
+.idcard_check_step_wrap{}
+.idcard_check_step_wrap .message_box{margin: 1.2rem 0 0 0;}
+.idcard_check_step_wrap .message_box{}
+
+
+
+
+
+
+
+/* border가 인풋 전체를 감싸야 하는 경우 */
+.border_cover{display:flex;justify-content:center;border:1px solid #CED6DE;border-radius:4px;}
+.border_cover input,.border_cover select,.border_cover textarea{border:none !important;position:relative;}
+.border_cover label{position:relative;}
+.border_cover label::after{position:absolute;left:-0.8rem;top:2.5rem;display:inline-block;width:0.8rem;height:100%;font-size:1.6rem;content:'-';color:#565C63;}
+.border_cover label:first-child::after{display:none;}
+.border_cover .js_selectbox .btn_select{border:none;}
+
+
+.margin_t_60{margin-top:6rem !important;}
+
+
+.icon_btn_wrap{}
+.icon_btn_wrap li{border: 1px solid #E7ECF3;}
+.icon_btn_wrap li + li{margin-bottom: 0.8rem;}
+.icon_btn_wrap li a{}
+.icon_btn_wrap .icon{}
