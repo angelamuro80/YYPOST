@@ -1,31 +1,34 @@
 @charset "UTF-8";
 
-/* Spoqa Han Sans Neo */
+/* 
+	Pretendard 
+	라이선스 전문: https://github.com/orioncactus/pretendard/blob/main/LICENSE
+ */
 @font-face{
-	font-family:'Spoqa';
-	font-weight:300;
-	src:url("../font/SpoqaHanSansNeo-Light.eot");
-	src:url("../font/SpoqaHanSansNeo-Light.eot?#iefix") format('embedded-opentype'),
-	    url("../font/SpoqaHanSansNeo-Light.woff") format('woff');
-}
-@font-face{
-	font-family:'Spoqa';
+	font-family:'Pretendard-Regular';
 	font-weight:400;
-	src:url("../font/SpoqaHanSansNeo-Regular.eot");
-	src:url("../font/SpoqaHanSansNeo-Regular.eot?#iefix") format('embedded-opentype'),
-	    url("../font/SpoqaHanSansNeo-Regular.woff") format('woff');
+	src:url("../font/Pretendard-Regular.eot");
+	src:url("../font/Pretendard-Regular.eot?#iefix") format('embedded-opentype'),
+	    url("../font/Pretendard-Regular.woff") format('woff');
 }
 @font-face{
-	font-family:'Spoqa';
-	font-weight:500;
-	src:url("../font/SpoqaHanSansNeo-Medium.eot");
- 	src:url("../font/SpoqaHanSansNeo-Medium.eot?#iefix") format('embedded-opentype'),
-	    url("../font/SpoqaHanSansNeo-Medium.woff") format('woff');
+	font-family:'Pretendard-Regular';
+	font-weight:600;
+	src:url("../font/Pretendard-SemiBold.eot");
+ 	src:url("../font/Pretendard-SemiBold.eot?#iefix") format('embedded-opentype'),
+	    url("../font/Pretendard-SemiBold.woff") format('woff');
 }
 @font-face{
-	font-family:'Spoqa';
+	font-family:'Pretendard-Regular';
 	font-weight:700;
-	src:url("../font/SpoqaHanSansNeo-Bold.eot");
- 	src:url("../font/SpoqaHanSansNeo-Bold.eot?#iefix") format('embedded-opentype'),
-	    url("../font/SpoqaHanSansNeo-Bold.woff") format('woff');
+	src:url("../font/Pretendard-Bold.eot");
+ 	src:url("../font/Pretendard-Bold.eot?#iefix") format('embedded-opentype'),
+	    url("../font/Pretendard-Bold.woff") format('woff');
 }
+
+/* @font-face {
+	font-family: 'Pretendard-Regular';
+	src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+} */

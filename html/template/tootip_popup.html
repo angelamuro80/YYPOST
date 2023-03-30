@@ -5,7 +5,7 @@
 <meta name="robots" content="index,follow">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, minimum-scale=1.0, user-scalable=yes">
-<meta name="title" content="라이나생명">
+<meta name="title" content="YYPOST">
 <meta name="keywords" content="">
 <meta name="description" content="">
 <link rel="shortcut icon" href="../../assets/images/common/og.png">
@@ -17,7 +17,7 @@
 <script src="../../assets/js/style.js"></script>
 <script src="../../assets/js/sub.js"></script>
 
-<title>보험계약대출 - 라이나생명</title>
+<title>툴팁팝업 - YYPOST</title>
 
 </head>
 
@@ -29,79 +29,63 @@
 <hr>
 
 <div id="wrapper">
-<header id="header">
-	<div class="wrap">
-		<h1 class="logo"><a href="javascript:;">보험계약대출 신청</a></h1>
-		<a href="javascript:;" class="prev_page" title="페이지 이동">이전</a>
-		<button type="button" aria-label="메뉴" class="button_menu"><i class="icon_menu"></i></button>
-	</div>
-</header>
-<!-- //header -->
-
-<hr>
-
-<div id="container">
-	<div class="wrap">
-        <main id="colgroup" class="colgroup">
-            <article>
-                <div id="contents">
-                    <div>
-                        <button type="button" class="icon_tooltip" aria-describedby="tp1">툴팁</button>
-                    </div>
-                    <!-- tootip -->
-                    <div id="tp1" class="tooltip_wrap" role="tooltip">        
-                        <div class="slide_pop_container"> 
-                            <div class="slide_pop_content">
-                                <div class="pop_header">
-                                    <h1 class="logo">대출이율</h1>
-                                </div>
-                                
-                                <div class="pop_inner">
-                                    <div class="content_inner">
-                                        <p>기준금리 2.5% + 가산금리 0.5% <br> 
-                                        = 대출이율 3.0%</p>
-                                    </div>
-                                </div>
-                
-                                <div class="pop_footer">
-                                    <div class="btn_box flex_grow denial">
-                                        <a href="javascript:;" class="btn no_round">확인</a>
-                                    </div>
-                                </div>
-                                <button type="button" class="icon_close">닫기</button>
-                            </div>
-                        </div>                        
-                        <div class="dim"></div>
-                    </div>
-                    <!-- // tootip -->
-                </div>
-                <!-- //contents -->
-            </article>
-        </main>
-        <!-- //main.colgroup -->
+  <header id="header">
+    <div class="wrap">
+      <h1 class="logo"><a href="javascript:;">YYPOST</a></h1>
+        <button type="button" aria-label="언어 선택" class="button_language" aria-describedby="leng1"><i class="icon_language"></i></button> <!-- 일본어 선택할 경우 버튼 태그에 클래스 jp 추가 -->
+      <button type="button" aria-label="메뉴" class="button_menu"><i class="icon_menu"></i></button>
     </div>
-    <!-- //wrap -->
+  </header>
+  <!-- //header -->
 
-    <script>
-        /* 퍼블 확인용 */
-        $(function (){
-            if ( !$('.tooltip_wrap').hasClass('.slide_pop_open') ) {
-				$('.icon_tooltip').parent().next('.tooltip_wrap').addClass('slide_pop_open');
-				$('.icon_tooltip').parent().next('.tooltip_wrap').find('.slide_pop_container').attr({'tabindex' : '0', 'aria-hidden' : 'false'}).focus();
-				$('.icon_tooltip').parent().next('.tooltip_wrap').prepend('<div class="tabIdx prev" tabindex="0"></div>').append('<div class="tabIdx next" tabindex="0"></div>');
-				$('.icon_tooltip').parent().next('.tooltip_wrap').find('.dim').show();
-			}
-            $('.icon_close, .dim').on('click', function (){
-                $('.icon_tooltip').parent().next('.tooltip_wrap').removeClass('slide_pop_open');
-                $('.icon_tooltip').parent().next('.tooltip_wrap').find('.slide_pop_container').removeAttr('tabindex').attr('aria-hidden', 'true');
-                $('.icon_tooltip').parent().next('.tooltip_wrap').find('.tabIdx').remove();
-                $('.icon_tooltip').parent().next('.tooltip_wrap').find('.dim').hide();
-            })
-        })
-        /* // 퍼블 확인용 */
-    </script>
-</div>
-<!-- //container -->
+  <hr>
+
+  <div id="container">
+    <div class="wrap">
+      <main id="colgroup" class="colgroup">
+        <article>
+          <div id="contents">
+            <div class="tooltip_button">
+              <button type="button" class="icon_tooltip" aria-describedby="tp1">툴팁</button>
+            </div>
+            <!-- tootip -->
+            <div id="tp1" class="tooltip_wrap" role="tooltip">        
+              <div class="tooltip_container">
+                <div>
+                  입고된 물건은 담당자가 확인을 하면 <br>도착 확인 사진을 촬영하여 표시됩니다.
+                </div>
+              </div>                        
+              <div class="dim"></div>
+            </div>
+            <!-- // tootip -->
+        </div>
+        <!-- //contents -->
+      </article>
+    </main>
+    <!-- //main.colgroup -->
+  </div>
+  <!-- //wrap -->
+
+  <script>
+    /* 퍼블 확인용 */
+    $(function (){
+      if ( !$('.tooltip_wrap').hasClass('.slide_pop_open') ) {
+        $('.icon_tooltip').parent().next('.tooltip_wrap').addClass('slide_pop_open');
+        $('.icon_tooltip').parent().next('.tooltip_wrap').find('.slide_pop_container').attr({'tabindex' : '0', 'aria-hidden' : 'false'}).focus();
+        $('.icon_tooltip').parent().next('.tooltip_wrap').prepend('<div class="tabIdx prev" tabindex="0"></div>').append('<div class="tabIdx next" tabindex="0"></div>');
+        $('.icon_tooltip').parent().next('.tooltip_wrap').find('.dim').show();
+      }
+      $('.icon_close, .dim').on('click', function (){
+        $('.icon_tooltip').parent().next('.tooltip_wrap').removeClass('slide_pop_open');
+        $('.icon_tooltip').parent().next('.tooltip_wrap').find('.slide_pop_container').removeAttr('tabindex').attr('aria-hidden', 'true');
+        $('.icon_tooltip').parent().next('.tooltip_wrap').find('.tabIdx').remove();
+        $('.icon_tooltip').parent().next('.tooltip_wrap').find('.dim').hide();
+      })
+    })
+    /* // 퍼블 확인용 */
+  </script>
+  </div>
+  <!-- //container -->
 
 </div>
 </body>
