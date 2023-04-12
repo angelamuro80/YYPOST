@@ -114,60 +114,95 @@
                     <ul>
                       <li class="item">
                         <div class="left_item bullet">주문일자</div>
-                        <div class="right_item font_black bold">2개</div>
+                        <div class="right_item font_black bold">2023-03-01</div>
                       </li>
                       <li class="item">
-                        <div class="left_item bullet">추적번호</div>
+                        <div class="left_item bullet">송장번호</div>
                         <div class="right_item font_black bold">37332883</div>
                       </li>
                       <li class="item">
-                        <div class="left_item bullet">결제방식</div>
-                        <div class="right_item">국민은행 001-000-00000</div>
-                      </li>
-                      <li class="item">
-                        <div class="left_item bullet">결제금액</div>
-                        <div class="right_item">200,000元</div>
+                        <div class="left_item bullet">이름</div>
+                        <div class="right_item">김국민</div>
                       </li>
                       <li class="line margin_t_16 margin_b_16"></li>
                       <li class="item">
-                        <div class="left_item bullet">수취인</div>
+                        <div class="left_item bullet font_black">수취인</div>
                         <div class="right_item">一番長い所の高さ</div>
                       </li>
                       <li class="item">
-                        <div class="left_item bullet">주소</div>
+                        <div class="left_item bullet font_black">주소</div>
                         <div class="right_item">OSACAFU OSAKA SHI CHUO KU 1-15-15 HIGASHISHINSAIBASH</div>
                       </li>
                       <li class="line line_black margin_t_16 margin_b_16"></li>
                       <li class="item">
-                        <div class="left_item bullet">송장번호</div>
-                        <div class="right_item font_black bold">248539684322
-                          <div class="detail_box">
+                        <div class="left_item bullet font_black">송장사진</div>
+                        <div class="right_item">
+                          <div class="detail_box type2">
                             <span class="img"><img src="../../assets/images/common/dummy.png" alt=""></span>
-                            <div class="cont">
-                              248539684543에 랜덤물건중 띠 부실 스티거 인지 확인 요청요
-                            </div>
                           </div>
                         </div>
-                      </li>
-                      <li class="item">
-                        <div class="left_item">비고</div>
-                        <div class="right_item ">띠부실 스트거 맞습니다.</div>
                       </li>
                       <li class="line margin_t_16 margin_b_16"></li>
                       <li class="item">
-                        <div class="left_item bullet">송장번호</div>
-                        <div class="right_item font_black bold">248539684322
-                          <div class="detail_box">
+                        <div class="left_item bullet font_black">요청사항</div>
+                        <div class="right_item">에 랜덤물건중 띠 부실 스티거 인지 확인 요청요</div>
+                      </li>
+                      <li class="line margin_t_16 margin_b_16"></li>
+                      <li class="item">
+                        <div class="left_item bullet font_black">요청사항 사진</div>
+                        <div class="right_item">
+                          <div class="detail_box type2">
                             <span class="img"><img src="../../assets/images/common/dummy.png" alt=""></span>
-                            <div class="cont">
-                              248539684543에 랜덤물건중 띠 부실 스티거 인지 확인 요청요
+                          </div>
+                        </div>
+                      </li>
+                      <li class="line margin_t_16 margin_b_16"></li>
+                      <li class="item">
+                        <div class="left_item bullet font_black">담당자답변</div>
+                        <div class="right_item">스티커 맞습니다.</div>
+                      </li>
+                      <li class="line line_black margin_t_16 margin_b_16"></li>
+                      <li class="item">
+                        <div class="left_item bullet font_black">수취인</div>
+                        <div class="right_item">一番長い所の高さ</div>
+                      </li>
+                      <li class="item">
+                        <div class="left_item bullet font_black">주소</div>
+                        <div class="right_item">OSACAFU OSAKA SHI CHUO KU 1-15-15 HIGASHISHINSAIBASH</div>
+                      </li>
+                      <li class="line margin_t_16 margin_b_16"></li>
+                      <li class="item center">
+                        <div class="left_item bullet font_black">무게입력</div>
+                        <div class="right_item">
+                          <div class="form_box">
+                            <label for="weightInput" class="skip">무게입력</label>
+                            <div class="form_area">
+                              <input type="text" id="weightInput" class="jsInput" aria-label="weight input" placeholder="무게를 입력해주세요.">
                             </div>
                           </div>
                         </div>
                       </li>
+                      <li class="line margin_t_16 margin_b_16"></li>
                       <li class="item">
-                        <div class="left_item">비고</div>
-                        <div class="right_item ">띠부실 스트거 맞습니다.</div>
+                        <div class="left_item bullet font_black">창고입고 <br>사진등록</div>
+                        <div class="right_item">
+                          <div class="form_box">
+                            <div class="attach_photo">
+                              <div class="contents_box">
+                                <ul>
+                                  <li class="item">
+                                    <input type="checkbox" name="" id="photo1">
+                                    <label for="photo1"><!-- <img src="../../assets/images/common/dummy.png" alt=""> --></label><!-- 이미지 없을 때 li 빈상태로 유지 -->
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="button_box">
+                                <button type="button" class="btn btn_line btn_blue small make">촬영</button>
+                                <button type="button" class="btn btn_line btn_red small del">삭제</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </li>
                     </ul>
                   </div>
@@ -175,7 +210,7 @@
                 </div>
                 <div class="pop_footer">
                   <div class="btn_box flex_grow">
-                    <button type="button" class="btn btn_red">배송신청</button>
+                    <button type="button" class="btn btn_red">입고완료</button>
                   </div>
                 </div>
                 <button type="button" class="icon_close">닫기</button>

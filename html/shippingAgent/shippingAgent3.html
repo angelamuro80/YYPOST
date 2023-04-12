@@ -17,7 +17,7 @@
 <script src="../../assets/js/style.js"></script>
 <script src="../../assets/js/sub.js"></script>
 
-<title>발송상세 - YYPOST</title>
+<title>상세보기 - YYPOST</title>
 </head>
 
 <body id="sub">
@@ -106,19 +106,19 @@
             <div class="slide_pop_container">
               <div class="slide_pop_content">
                 <div class="pop_header">
-                    <h1 class="logo">발송상세</h1>
+                    <h1 class="logo">상세보기</h1>
                 </div>
                   
                 <div class="pop_inner">
                   <div class="list_wrap type2 margin_b_0">
                     <ul>
                       <li class="item">
-                        <div class="left_item bullet">주문일자</div>
-                        <div class="right_item font_black bold">2개</div>
+                        <div class="left_item bullet">신청일자</div>
+                        <div class="right_item font_black bold">2023-03-01</div>
                       </li>
                       <li class="item">
                         <div class="left_item bullet">추적번호</div>
-                        <div class="right_item font_black bold">37332883</div>
+                        <div class="right_item font_black bold">37332883 </div>
                       </li>
                       <li class="item">
                         <div class="left_item bullet">결제방식</div>
@@ -130,44 +130,62 @@
                       </li>
                       <li class="line margin_t_16 margin_b_16"></li>
                       <li class="item">
-                        <div class="left_item bullet">수취인</div>
+                        <div class="left_item bullet font_black">수취인</div>
                         <div class="right_item">一番長い所の高さ</div>
                       </li>
                       <li class="item">
-                        <div class="left_item bullet">주소</div>
+                        <div class="left_item bullet font_black">주소</div>
                         <div class="right_item">OSACAFU OSAKA SHI CHUO KU 1-15-15 HIGASHISHINSAIBASH</div>
-                      </li>
-                      <li class="line line_black margin_t_16 margin_b_16"></li>
-                      <li class="item">
-                        <div class="left_item bullet">송장번호</div>
-                        <div class="right_item font_black bold">248539684322
-                          <div class="detail_box">
-                            <span class="img"><img src="../../assets/images/common/dummy.png" alt=""></span>
-                            <div class="cont">
-                              248539684543에 랜덤물건중 띠 부실 스티거 인지 확인 요청요
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="item">
-                        <div class="left_item">비고</div>
-                        <div class="right_item ">띠부실 스트거 맞습니다.</div>
                       </li>
                       <li class="line margin_t_16 margin_b_16"></li>
                       <li class="item">
-                        <div class="left_item bullet">송장번호</div>
-                        <div class="right_item font_black bold">248539684322
-                          <div class="detail_box">
-                            <span class="img"><img src="../../assets/images/common/dummy.png" alt=""></span>
-                            <div class="cont">
-                              248539684543에 랜덤물건중 띠 부실 스티거 인지 확인 요청요
-                            </div>
-                          </div>
+                        <div class="left_item bullet font_black">수취인</div>
+                        <div class="right_item">
+                          <table class="table no_line">
+                            <caption>신청내역 리스트</caption>
+                            <colgroup>
+                              <col style="width:25%">
+                              <col style="width:75%">
+                            </colgroup>
+                            <thead>
+                              <tr>
+                                <th scope="row">No.</th>
+                                <th scope="row">입고일자 / 무게</th>
+                              </tr>
+                            </thead>
+                            <tbody class="text_center">
+                              <tr>
+                                <td>1</td>
+                                <td>2023-03-01 / 2.0Kg</td>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td>2023-03-01 / 2.0Kg</td>
+                              </tr>
+                            </tbody>
+                            <tfoot class="text_right">
+                              <tr>
+                                <th scope="row">총 무게</th>
+                                <td>9.0kg</td>
+                              </tr>
+                            </tfoot>
+                          </table>
                         </div>
                       </li>
-                      <li class="item">
-                        <div class="left_item">비고</div>
-                        <div class="right_item ">띠부실 스트거 맞습니다.</div>
+                      <li class="line margin_t_16 margin_b_16"></li>
+                      <li class="item center">
+                        <div class="left_item bullet font_black">상태변경</div>
+                        <div class="right_item">
+                          <div class="form_box">
+                            <label for="stateChange" class="skip">상태변경</label>
+                            <div class="form_area">
+                              <select name="" id="stateChange">
+                                <option value="">입금확인중</option>
+                              </select>
+                            </div>
+                          </div>
+
+                        </div>
                       </li>
                     </ul>
                   </div>

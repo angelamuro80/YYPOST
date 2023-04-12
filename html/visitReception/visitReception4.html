@@ -17,7 +17,7 @@
 <script src="../../assets/js/style.js"></script>
 <script src="../../assets/js/sub.js"></script>
 
-<title>방문접수 신청 - YYPOST</title>
+<title>방문접수 상세 - YYPOST</title>
 </head>
 
 <body id="sub">
@@ -91,7 +91,7 @@
           <div class="header_box">
             <div class="contents_box">
               <h3>
-                방문접수 신청
+                방문접수 상세
               </h3>
             </div>
           </div>
@@ -210,23 +210,37 @@
                       <div class="form_box">
                         <label for="email2" class="input_title">이메일 주소</label>
                         <div class="form_area">
-                          <input type="text" id="email2" class="jsInput" aria-label="email2" placeholder="이메일 주소를 입력해주세요.">
+                          <!-- <input type="text" id="email2" class="jsInput" aria-label="email2" placeholder="이메일 주소를 입력해주세요."> -->
+                          <input type="text" id="email2" class="jsInput" aria-label="email2" readonly>
                         </div>
                       </div>
                     </li>
                     <li class="form_item">
                       <div class="form_box">
-                        <label for="country" class="input_title">배송국가</label>
+                        <label for="country" class="input_title">배송국가<span class="essential">필수</span></label>
                         <div class="form_area">
-                          <input type="text" id="country" class="jsInput" aria-label="country" placeholder="배송국가를 입력해주세요.">
+                          <select name="" id="country">
+                            <option value="">배송국가를 선택하세요.</option>
+                          </select>
+                          <!-- <input type="text" id="country" class="jsInput" aria-label="country" placeholder="배송국가를 입력해주세요."> -->
                         </div>
                       </div>
                     </li>
                     <li class="form_item">
                       <div class="form_box">
-                        <label for="zipCode" class="input_title">우편번호</label>
+                        <label for="zipCode" class="input_title">우편번호<span class="essential">필수</span></label>
                         <div class="form_area">
-                          <input type="text" id="zipCode" class="jsInput" aria-label="zip Code" placeholder="우편번호를 입력해주세요.">
+                          <!-- <input type="text" id="zipCode" class="jsInput" aria-label="zip Code" placeholder="우편번호를 입력해주세요."> -->
+                          <input type="text" id="zipCode" class="jsInput" aria-label="zip Code" readonly>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="form_item">
+                      <div class="form_box">
+                        <label for="address2" class="input_title">주소<span class="essential">필수</span></label>
+                        <div class="form_area">
+                          <!-- <input type="text" id="address2" class="jsInput" aria-label="address" placeholder="우편번호를 입력해주세요."> -->
+                          <input type="text" id="address2" class="jsInput" aria-label="address" readonly>
                         </div>
                       </div>
                     </li>
@@ -234,8 +248,9 @@
                 </div>
 
                 <div class="bottom_fixed">
-                  <div class="btn_box flex_grow">
-                    <button type="submit" class="btn btn_blue">저장</button><!-- 유효성 확인 후 클래스 btn_blue 추가 -->
+                  <div class="btn_box flex_grow spacing denial">
+                    <button type="submit" class="btn">수정</button><!-- 유효성 확인 후 클래스 btn_blue 추가 -->
+                    <button type="submit" class="btn btn_blue">쉽너지 전송</button><!-- 유효성 확인 후 클래스 btn_blue 추가 -->
                   </div>
                 </div>
               </fieldset>

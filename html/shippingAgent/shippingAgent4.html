@@ -17,7 +17,7 @@
 <script src="../../assets/js/style.js"></script>
 <script src="../../assets/js/sub.js"></script>
 
-<title>회원정보 - YYPOST</title>
+<title>배송대행신청 상세보기 - YYPOST</title>
 </head>
 
 <body id="sub">
@@ -91,89 +91,107 @@
           <div class="header_box">
             <div class="contents_box">
               <h3>
-                회원정보
+                배송대행신청 상세보기
               </h3>
             </div>
           </div>
           <!-- // 컨텐츠 타이틀 -->
             
-          <div class="content_inner">
-            <form>
-              <fieldset>
-                <legend>회원정보</legend>
-                <div class="form_list_wrap">
-                  <ul>                   
-                    <li class="form_item">
-                      <div class="form_box">
-                        <label for="id" class="input_title">아이디</label>
-                        <div class="form_area">
-                          <input type="text" id="id" class="jsInput type2" aria-label="id" value="아이디" placeholder="아이디를 입력해주세요." readonly>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="form_item">
-                      <div class="form_box">
-                        <label for="uniqueNumber" class="input_title">고유번호</label>
-                        <div class="form_area">
-                          <input type="text" id="uniqueNumber" class="jsInput type2" aria-label="unique number" value="고유번호" placeholder="고유번호를 입력해주세요." readonly>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="form_item">
-                      <div class="form_box">
-                        <label for="email" class="input_title">이메일 주소</label>
-                        <div class="form_area">
-                          <input type="text" id="email" class="jsInput type2" aria-label="email" value="이메일 주소" placeholder="이메일 주소를 입력해주세요." readonly>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="form_item margin_t_40">
-                      <div class="form_box">
-                        <label for="passportName" class="input_title">여권명<span class="essential">필수</span></label>
-                        <div class="form_area">
-                          <input type="text" id="passportName" class="jsInput" aria-label="passport name" placeholder="여권에 기재된 영문명을 입력해주세요.">
-                        </div>
-                      </div>
-                    </li>
-                    <li class="form_item">
-                      <div class="form_box type3">
-                        <div for="phone" class="input_title">연락처<span class="essential">필수</span></div>
-                        <div class="flex_box">
-                          <div class="input_cont">
-                            <label for="phone1" class="skip">국가 번호 선택</label>
-                            <select name="" id="phone1">
-                              <option value="">+82</option>
-                            </select>
-                          </div>
-                          <div class="input_cont">
-                            <label for="phone2" class="skip">국번 선택</label>
-                            <select name="" id="phone2">
-                              <option value="">010</option>
-                            </select>
-                          </div>
-                          <div class="input_cont">
-                            <label for="phone3" class="skip">휴대폰 번호 두번째 4자리 입력</label>
-                            <input type="text" id="phone3" class="jsInput" placeholder="0000">
-                          </div>
-                          <div class="input_cont">
-                            <label for="phone4" class="skip">휴대폰 번호 세번째 4자리 입력</label>
-                            <input type="text" id="phone4" class="jsInput" placeholder="0000">
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
+          
 
-                <div class="bottom_fixed">
-                  <div class="btn_box flex_grow">
-                    <button type="submit" class="btn btn_blue">저장</button><!-- 유효성 확인 후 클래스 btn_blue 추가 -->
+
+          <button type="button" class="pop_btn">팝업 버튼</button> <!-- 팝업 열기 버튼 -->
+          <!-- 슬라이드 팝업 -->
+          <section class="slide_popup_wrap">        
+            <div class="slide_pop_container">
+              <div class="slide_pop_content">
+                <div class="pop_header">
+                    <h1 class="logo">배송대행신청 상세보기</h1>
+                </div>
+                  
+                <div class="pop_inner">
+                  <div class="list_wrap type2 margin_b_0">
+                    <ul>
+                      <li class="item">
+                        <div class="left_item bullet">입고일자</div>
+                        <div class="right_item font_black bold">2023-03-01</div>
+                      </li>
+                      <li class="item">
+                        <div class="left_item bullet">배송사/<br>송장번호</div>
+                        <div class="right_item font_black bold">37332883</div>
+                      </li>
+                      <li class="item">
+                        <div class="left_item bullet">이름</div>
+                        <div class="right_item">김국민</div>
+                      </li>
+                      <li class="line margin_t_16 margin_b_16"></li>
+                      <li class="item">
+                        <div class="left_item bullet font_black">송장사진</div>
+                        <div class="right_item">
+                          <div class="detail_box type2">
+                            <span class="img"><img src="../../assets/images/common/dummy.png" alt=""></span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="line margin_t_16 margin_b_16"></li>
+                      <li class="item">
+                        <div class="left_item bullet font_black">요청사항</div>
+                        <div class="right_item">에 랜덤물건중 띠 부실 스티거 인지 확인 요청요</div>
+                      </li>
+                      <li class="line margin_t_16 margin_b_16"></li>
+                      <li class="item">
+                        <div class="left_item bullet font_black">요청사항 사진</div>
+                        <div class="right_item">
+                          <div class="detail_box type2">
+                            <span class="img"><img src="../../assets/images/common/dummy.png" alt=""></span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="line margin_t_16 margin_b_16"></li>
+                      <li class="item">
+                        <div class="left_item bullet font_black">담당자답변</div>
+                        <div class="right_item">스티커 맞습니다.</div>
+                      </li>
+                      <li class="line margin_t_16 margin_b_16"></li>
+                      <li class="item center">
+                        <div class="left_item bullet font_black">무게</div>
+                        <div class="right_item">2.0kg</div>
+                      </li>
+                      <li class="line margin_t_16 margin_b_16"></li>
+                      <li class="item">
+                        <div class="left_item bullet font_black">입고사진</div>
+                        <div class="right_item">
+                          <div class="detail_box type2">
+                            <span class="img"><img src="../../assets/images/common/dummy.png" alt=""></span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
+                  <div class="line line_black margin_b_16"></div>
                 </div>
-              </fieldset>
-            </form>
-          </div>
+                <button type="button" class="icon_close">닫기</button>
+              </div>
+            </div>
 
+            <div class="dim"></div>
+          </section>
+          <!-- // 슬라이드 팝업 -->
+
+           <!-- 퍼블 확인 용 -->
+            <script>
+              $(function (){
+                if ( !$('.slide_popup_wrap').hasClass('.slide_pop_open') ) {
+                  $('.slide_popup_wrap').addClass('slide_pop_open');
+                  $('.dim').show();
+                }
+                $('.icon_close, .dim').on( 'click', function (){
+                  $('.slide_popup_wrap').removeClass('slide_pop_open');
+                  $('.dim').hide();
+                })
+              })
+          </script>
+          <!-- // 퍼블 확인 용 -->
 
 
 

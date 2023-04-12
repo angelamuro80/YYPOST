@@ -5,7 +5,6 @@ $(document).ready(function(){
 $(window).resize(function(){
 	//jsLnbResiz();// lnb 리사이징 위치값
 	fullHeight(); // 전체화면 높이값
-	slideMenu(); // 슬라이드 메뉴
 	layerFullPop(); // 전체팝업
 });
 
@@ -193,6 +192,9 @@ function gnbPop() {
 				$tpWrap.find($tpPopCont).removeAttr('tabindex').attr('aria-hidden', 'true');	
 				$tpWrap.find('.tabIdx').remove();
 				$depth1.removeClass('on');
+				$('#wrapper').removeAttr('tabindex').attr('aria-hidden', 'false');
+				$("html, body").css({'overflow' : 'auto', 'height' : 'auto'}); // 레이어팝업 닫았을 때 html, body의 scroll 가능
+				$("html, body").off("scroll, touchmove, mousewheel"); // 앱, 모바일 터치무브 및 마우스 휠 스크롤 가능
 				$dim.hide();
 				$this.focus();
 				
